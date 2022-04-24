@@ -9,28 +9,27 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 #ifndef ONLINE_JUDGE
-    //freopen("input.txt", "r", stdin);
-    // freopen("output.txt", "w", stdout);
+    // freopen("input.txt", "r", stdin);
+    //  freopen("output.txt", "w", stdout);
 #endif
 
     int n;
-    cin>>n;
+    cin >> n;
 
-    int lastNumber = n%10;
+    int lastNumber = n % 10;
 
-    if(lastNumber == 0)
+    if (lastNumber == 0)
     {
-        cout<<n<<endl;
+        cout << n << endl;
     }
-    else if (lastNumber<5)
+    else if (lastNumber < 5)
     {
-        cout<< n - lastNumber<<endl;
+        cout << n - lastNumber << endl;
     }
     else
     {
-        cout<<n+ ( 10 - lastNumber)<<endl;
+        cout << n + (10 - lastNumber) << endl;
     }
-
 
 #ifndef ONLINE_JUDGE
     cerr << "Time : " << 1000 * ((double)clock()) / (double)CLOCKS_PER_SEC << "ms\n";
